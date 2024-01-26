@@ -15,20 +15,15 @@ export class HomeComponent implements OnInit {
 
   constructor(private productService: ProductsService, private router: Router ) {}
   ngOnInit(): void {
-      this.figurines = this.productService.getFigurines();
+    this.figurines = this.productService.getFigurines();
   }
 
   sort(order: string){
     this.sortOrder = order;
   }
 
-  filtreParNom(){
-    this.figurines = this.productService.getFigurines().filter(figurine => figurine.name.toLowerCase().includes(this.nomRecherche.toLowerCase()));
-  }
-
   goFigurine(figurines: any){
-    console.log(figurines.id);
-    
+    console.log(figurines.id);    
     this.router.navigate(["/product",figurines.id]);
   }
 }

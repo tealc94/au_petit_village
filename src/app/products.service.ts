@@ -68,6 +68,29 @@ export class ProductsService {
       height: 13,
       material: "résine",
       imageUrl: "./assets/Bonemine.jpg"
+    },
+    {
+      id:7,
+      name: "Panoramix",
+      description: `Panoramix est le Druide du village, inventeur de potions en tous genres 
+      et détenteur de la sagesse gauloise. Il concocte sa fameuse potion magique dans 
+      sa marmite pour contrer les attaques romaines. Revivez chez vous les aventures 
+      d'Astérix et Obélix avec cette figurine Panoramix.`,
+      price: 44.99,
+      height: 17,
+      material: "résine",
+      imageUrl: "./assets/Panoramix.jpg"
+    },
+    {
+      id:8,
+      name: "Jules césar",
+      description: `Salut Jules!!!
+      Jules César est un commentateur de la guerre des Gaules, grand pourvoyeur 
+      de citations mémorables, comme son célèbre "Veni, Vidi, Vici" !`,
+      price: 50.99,
+      height: 20,
+      material: "résine",
+      imageUrl: "./assets/Jules_Cesar.jpg"
     }
   ]
 
