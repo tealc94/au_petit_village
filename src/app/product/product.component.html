@@ -1,0 +1,18 @@
+<div class="bloc_produit">
+    <div class="fiche">
+        <div class="fichePhoto">
+            <img [src]="produit.imageUrl" alt="{{ produit.name }}">
+            <p class="nom">{{ produit.name }}</p>
+        </div>
+        <div class="ficheDescriptif">
+            <article>
+                <p>{{ produit.description }}</p>
+                <p>Hauteur: {{ produit.height }} cm</p>
+                <p>Matière: {{ produit.material }}</p>
+                <p>Prix: {{ produit.price }} €</p>
+            </article>
+        </div>
+    </div>
+    <button (click)="goFigurineList()">Retour</button>
+</div>
+

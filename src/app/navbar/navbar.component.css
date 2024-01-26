@@ -1,0 +1,35 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+.bloc_image{
+    text-align: center;
+}
+
+img{
+    height: 150px;  
+}
+
+nav{
+    margin: 0 auto;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+}
+
+.navbar-collapse{
+    background-color: #FDD90B;
+}
+
+a:hover{
+    background-color: #F9D0A3;
+}
+
+@media screen and ( max-width: 575px ){
+    .navbar-nav{
+        flex-direction: column;
+    }
+    .navbar-nav .nav-item{
+        width: 100%;
+        text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+.bloc_contact{
+    background: #DA001E;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 0 auto;
+}
+
+fieldset{
+    border: 2px solid black;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 20px;
+    width: 450px;
+    margin: 0 auto;
+}
+
+input, textarea{
+    width: 350px;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+
+button{
+    border-radius: 5px;
+    width: 100px;
+}
+button:hover{
+    background-color: #F9D0A3;
+}

@@ -1,0 +1,55 @@
+.bloc_produit{
+    margin: 0 auto;
+    background-color: #DA001E;
+    text-align: center;
+    padding: 20px 20px;
+    justify-content: center;
+}
+
+.fiche{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;   
+    width: 600px; 
+    margin: 0 auto;
+}
+
+.fichePhoto{
+    width: 250px;
+}
+
+.nom{
+    font-size: x-large;
+}
+
+.ficheDescriptif{
+    width: 300px;
+    border-left: 2px solid gray;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+button{
+    border-radius: 5px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: #F9D0A3;
+}
+
+@media screen and (max-width: 650px) {
+    .fiche{
+        display: block;
+        width: 300px; 
+    }
+
+    .ficheDescriptif{
+        border-left: none;
+        border-top: 2px solid gray;
+    }
+}

@@ -1,0 +1,54 @@
+.bloc_home{
+    margin: 0 auto;
+    background-color: #DA001E;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.bloc_fiche .ligne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ligne{
+    gap: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.fiche{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 370px;
+    background-color: white;
+}
+
+.fiche:hover{
+    border: 5px solid #F9D0A3;
+}
+
+button{
+    margin: 5px;
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: #F9D0A3;
+}
+
+.croissant, .decroissant{
+    width: 24px;
+}
+
+@media screen and (max-width: 600px) {
+    .fiche{
+        width: 300px;
+        margin: 0 auto;
+    }   
+}

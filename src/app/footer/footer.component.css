@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: #FDD90B;
+    height: 100px;    
+}
+
+a{
+    padding: 10px;
+}
+
+img{
+    border-radius: 50px ;
+}

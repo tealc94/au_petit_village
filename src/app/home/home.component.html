@@ -1,0 +1,24 @@
+<div class="bloc_home">
+    <div>
+        <h1>Bienvenue {{ title }}</h1>
+        <p>“{{ title }}” est une entreprise qui confectionne des figurines inspirées de la bande dessinée Astérix et Obélix.
+            Elle cible une population jeune entre 30 et 55 ans, nostalgique des aventures des célèbres Gaulois.</p>
+    </div>
+    <h2>Nos figurines</h2> 
+    <input [(ngModel)]="nomRecherche" (input)="filtreParNom()" type="text" placeholder="Rechercher par nom">
+    <span>Tri par:
+        <button (click)="sort('croissant')">
+            <img class="croissant" src="../../assets/croissant.png" alt="tri croissant">
+        </button>
+        <button (click)="sort('decroissant')">
+            <img class="decroissant" src="../../assets/decroissant.png" alt="tri décroissant">
+        </button>
+    </span>
+    <div class="bloc_fiche">  
+        <div class="ligne">
+            <div *ngFor="let figurine of (figurines|sortByPrice:sortOrder); index as i" class="fiche">                
+                <a (click)="goFigurine(figurine)"><img [src]="figurine.imageUrl" alt="figurine.name"></a><br>{{ figurine.name }}<br>{{ figurine.price }}€               
+            </div>
+        </div>
+    </div>   
+</div>
