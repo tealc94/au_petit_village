@@ -5,8 +5,12 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class FilterByNamePipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
-  }
+  transform(figurines: any[], nomRecherche: string): any {
+    if (!nomRecherche || nomRecherche.trim() === ''){
+      return figurines;
+    }
 
+    nomRecherche = nomRecherche.toLowerCase();
+    return figurines.filter(figurine => figurine.name.toLowerCase().includes(nomRecherche));
+  }
 }
